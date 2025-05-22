@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "gcc Build and Run",
+            "type":"shell",
+            "command": "g++",
+            "args": [
+                "main.cpp",
+                "-Wall",
+                "-g",
+                "-std=c++14",
+                "-O2",
+                "-o",
+                "NetworkSimulation"
+            ],
+            "group": {
+                "kind": "build"
+            }
+        },
+        {
+            "label":"cl.exe build and run main.cpp",
+            "type":"shell",
+            "command": "cl.exe",
+            "args": [
+                ""
+            ]
+        },
+        {
+            "label": "Run Program",
+            "dependsOn": ["gcc Build and Run"],
+            "command": "./NetworkSimulation",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+
+}
