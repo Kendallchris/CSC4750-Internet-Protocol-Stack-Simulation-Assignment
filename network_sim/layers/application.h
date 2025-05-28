@@ -7,6 +7,7 @@
 class ApplicationLayer : public LayerInterface {
     public:
         std::string Encapsulate(std::string input);
+        std::string Decapsulate(std::string input);
 };
 
 #endif

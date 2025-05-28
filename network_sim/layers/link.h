@@ -6,8 +6,8 @@
 
 class LinkLayer : public LayerInterface {
     public:
-        std::string ToString();
         std::string Encapsulate(std::string input);
+        std::string Decapsulate(std::string input);
 };
 
 #endif
