@@ -1,13 +1,11 @@
 #ifndef TRANSPORT_LAYER_CLASS_H
 #define TRANSPORT_LAYER_CLASS_H
 #include <string>
+#include "../custom_interfaces/layerinterface.h"
 
-class TransportLayer {
+class TransportLayer: public LayerInterface {
     public:
-        TransportLayer();
-        Encapsulate();
-        Decapsulate();
-
-
-        std::string ToString();
+        std::string Encapsulate(std::string input);
 };
+
+#endif

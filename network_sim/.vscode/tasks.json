@@ -2,10 +2,15 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "gcc Build and Run",
+            "label": "gcc Custom Build and Run",
             "type":"shell",
             "command": "g++",
             "args": [
+                "custom_interfaces/layerinterface.h",
+                "layers/application.cpp",
+                "layers/link.cpp",
+                "layers/network.cpp",
+                "layers/transport.cpp",
                 "main.cpp",
                 "-Wall",
                 "-g",
@@ -28,7 +33,7 @@
         },
         {
             "label": "Run Program",
-            "dependsOn": ["gcc Build and Run"],
+            "dependsOn": ["gcc Custom Build and Run"],
             "command": "./NetworkSimulation",
             "group": {
                 "kind": "build",

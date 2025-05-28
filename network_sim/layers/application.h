@@ -2,10 +2,11 @@
 #ifndef APPLICATION_LAYER_CLASS_H
 #define APPLICATION_LAYER_CLASS_H
 #include <string>
+#include "../custom_interfaces/layerinterface.h"
 
-class ApplicationLayer {
+class ApplicationLayer : public LayerInterface {
     public:
-        TransportLayer layer;
-        
-        std::string ToString();
+        std::string Encapsulate(std::string input);
 };
+
+#endif
