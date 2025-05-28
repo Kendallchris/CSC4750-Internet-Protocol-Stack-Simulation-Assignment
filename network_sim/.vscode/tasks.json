@@ -6,7 +6,6 @@
             "type":"shell",
             "command": "g++",
             "args": [
-                "custom_interfaces/layerinterface.h",
                 "layers/application.cpp",
                 "layers/link.cpp",
                 "layers/network.cpp",

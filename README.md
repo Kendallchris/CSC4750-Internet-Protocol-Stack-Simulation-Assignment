@@ -4,29 +4,31 @@
 
 ### ✅ Core Tasks
 
-* [x] Implement `Encapsulate()` for each layer. *(Done)*
-* [x] Maintain a queue for message transfer. *(Done)*
-* [x] Implement `Decapsulate()` for each layer (removing the layer's header). *(Done)*
+* [x] Implement `Encapsulate()` for each layer.
+* [x] Maintain a queue for message transfer.
+* [x] Implement `Decapsulate()` for each layer (removing the layer's header).
 
-### ❗ Must-Do Tasks
+---
 
-* [ ] Add console print statements for both `Encapsulate()` and `Decapsulate()` similar to assignment example.
-* [ ] Modify `main.cpp` to:
+### ✅ Must-Do Tasks (Now Completed or Addressed)
+
+* [x] Add console print statements for both `Encapsulate()` and `Decapsulate()` similar to assignment example.
+* [x] Modify `main.cpp` to:
 
   * Show a complete `==== Sending ====` section
   * Then show a `==== Receiving ====` section
   * Iterate through `Decapsulate()` in reverse order.
-* [ ] Fix `LayerInterface`:
+* [x] Fix `LayerInterface`:
 
-  * Make `Encapsulate` and `Decapsulate` pure virtual (`= 0`)
-  * Add a `virtual ~LayerInterface() {}` destructor.
-* [ ] Implement `get_messages_from_queue()` or remove it if unused.
+  * Made `Encapsulate` and `Decapsulate` pure virtual (`= 0`)
+  * Added a `virtual ~LayerInterface() {}` destructor.
+* [x] Implement `get_messages_from_queue()` or remove it if unused.
 
-### 🧹 Cleanup / Quality Tasks
+---
 
-* [ ] Call `delete` on all `new`-created layer pointers in `main.cpp`.
-* [ ] Consider renaming `ToString()` in `LinkLayer` or removing it if unused.
-* [ ] Optionally add comments or a `README.md` to explain each file's role.
+### ✅ Cleanup / Quality Tasks
+
+* [x] Call `delete` on all `new`-created layer pointers in `main.cpp`.
 
 ---
 
@@ -35,6 +37,8 @@
 * [ ] Implement checksum at the transport layer.
 * [ ] Simulate dropped/corrupted packets.
 * [ ] Implement basic ARP and device abstraction.
+
+---
 
 ## Objective
 

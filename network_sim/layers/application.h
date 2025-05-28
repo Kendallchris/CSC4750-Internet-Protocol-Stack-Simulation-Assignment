@@ -1,6 +1,6 @@
-
 #ifndef APPLICATION_LAYER_CLASS_H
 #define APPLICATION_LAYER_CLASS_H
+
 #include <string>
 #include "../custom_interfaces/layerinterface.h"
 
