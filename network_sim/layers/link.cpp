@@ -6,8 +6,8 @@ using std::cout;
 using std::endl;
 
 string LinkLayer::Encapsulate(string input) {
+    cout << "[Link Layer] Sending: " << input << endl;
     string result = "LINK_HDR|" + input;
-    cout << "[Link Layer] Sending: " << result << endl;
     return result;
 }
 

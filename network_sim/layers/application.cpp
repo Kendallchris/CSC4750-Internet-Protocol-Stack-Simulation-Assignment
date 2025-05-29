@@ -6,8 +6,8 @@ using std::cout;
 using std::endl;
 
 string ApplicationLayer::Encapsulate(string input) {
+    cout << "[Application Layer] Sending: " << input << endl;
     string result = "APP_HDR|" + input;
-    cout << "[Application Layer] Sending: " << result << endl;
     return result;
 }
 

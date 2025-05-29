@@ -6,8 +6,8 @@ using std::cout;
 using std::endl;
 
 string TransportLayer::Encapsulate(string input) {
+    cout << "[Transport Layer] Sending: " << input << endl;
     string result = "TRANS_HDR|" + input;
-    cout << "[Transport Layer] Sending: " << result << endl;
     return result;
 }
 

@@ -6,8 +6,8 @@ using std::cout;
 using std::endl;
 
 string NetworkLayer::Encapsulate(string input) {
+    cout << "[Network Layer] Sending: " << input << endl;
     string result = "NET_HDR|" + input;
-    cout << "[Network Layer] Sending: " << result << endl;
     return result;
 }
 
