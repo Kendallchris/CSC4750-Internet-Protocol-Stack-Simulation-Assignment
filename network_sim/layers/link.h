@@ -1,3 +1,10 @@
+/**
+ * Networking Simulation
+ * CSC4750
+ * Dennis vickers
+ * Kyler Veenstra, Chris Kendall
+ * 2025-05-29
+ */
 #ifndef LINK_LAYER_H
 #define LINK_LAYER_H
 
