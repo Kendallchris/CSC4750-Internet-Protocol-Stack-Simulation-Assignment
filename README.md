@@ -17,3 +17,9 @@
 ## How to Build/Run
 
 - From within network_sim directory: Terminal > Run Task > Run Program
+
+- Using tasks: Ctrl+Shift+B and run "gcc Custom Build and Run"
+
+- Using g++ build commands.
+From network_sim directory:
+`g++ layers/application.cpp layers/link.cpp layers/network.cpp layers/transport.cpp main.cpp -Wall -g -std=c++14 -o2 -o NetworkSimulation`
